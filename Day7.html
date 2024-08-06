@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#box{
+width: 200px;
+height: 200px;
+ background-color:cornflowerblue; 
+/* background-image:url(https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&w=600); */
+text-align : center;
+border-radius: 20px;
+position:relative; 
+background-size:cover;
+animation: myanim 1s
+infinite;
+padding: 20px;
+
+}
+h1{
+    padding-top: 70px;
+    color: chartreuse;
+    text-shadow: 2px 2px black;
+}
+#box1{
+    width: 200px;
+    height: 200px;
+    background-image: url(https://images.pexels.com/photos/1762851/pexels-photo-1762851.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px grey;
+    animation: anim 1s infinite;
+}
+@keyframes anim {
+    0%{rotate: 0deg;}
+    10%{rotate: -5deg;}
+    20%{rotate: 5deg;}
+    30%{rotate: 0deg;}
+    40%{rotate: -5deg;}
+    50%{rotate: 5deg;}
+}
+#box1:hover{
+    animation: anim 0.4s infinite;
+}
+@keyframes myanim
+    /* 0%{left: 400px; */
+/* 0%{transform: translateX(0px);}
+100%{transform:translateX(300px);} */
+{from{opacity: 0;transform: scale(0);}to{opacity: 1; transform: scale(1);}
+}
+table,th,td{
+    border:1px solid grey;
+margin: 55px;
+text-align: center;
+font-size: 14px;
+}
+#a{
+    background-color:green;
+}
+li{
+    display: flex;
+    flex-direction: row;
+    /* ----flexbox, for data written as rows----- */
+}
+th:nth-child(1){
+    cursor:url("rocket.gif"),
+    pointer;
+}
+th:nth-child(2){
+    cursor:url("rocket.gif"),
+    pointer;
+}
+th:nth-child(3){
+    cursor:url("rocket.gif"),
+    pointer;
+}
+button{
+    cursor:url("rocket.gif")
+}
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1>Welcome</h1>
+    </div>
+    <div id="box1">
+
+    </div>
+    <table style="width: 60%;">
+        <tr id="a">
+            <th>Name</th>
+            <th>Batch</th>
+            <th>Course</th>
+        </tr>
+        <tr>
+            <td>Tom</td>
+            <!-- <td>2024</td> -->
+             <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvEd8NZrY04c1V8VjyZ-guY_A0_7eMLfthosyRRYlr9fEyhJMDk_MYoY-96zwoETHWH-M&usqp=CAU" width="150px"></td>
+            <td id="b"
+            
+            style="background-color: brown;">Web Development
+                <h2>February 2024</h2> 
+            <!-- <ul>
+                <li><time
+                     datetime="2024-02-01">1</time></li>
+                <li><time
+                     datetime="2024-02-01">2</time></li>
+                <li><time
+                    datetime="2024-02-01">3</time></li>
+             <li><time 
+                datetime="2024-02-01">4</time></li>
+             <li><time 
+                datetime="2024-02-01">5</time></li>
+            
+            </ul> -->
+            <input type="date"
+            placeholder="Calender">
+            </td>  
+            
+        </tr>
+        <tr>
+            <td>Jerry</td>
+            <!-- <td>2024</td> -->
+             <td>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyYsTc2KJQzaua2T1ocZ0ofzD2UXVYh_OT98iNzqHWdfKPDi6aM7dJxG2yb_Lytizvw3M&usqp=CAU" width="100px"></td><td style="background-color: rgb(124, 70, 104);">Fullstack Development</td></tr>
+ </table>
+    <button>Submit</button>
+</body>
+</html>
